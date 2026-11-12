@@ -99,12 +99,27 @@ header .wrap{position:relative;z-index:1}
 .nota{flex:none;text-align:center;border:2px solid currentColor;border-radius:12px;padding:3px 10px;font-weight:800;line-height:1.1}
 .nota small{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
 .caliente{color:#D9661A}.templada{color:#B8891F}
+.dir{display:flex;gap:5px;align-items:center;margin-top:3px;font-size:13px;color:var(--muted)}
+.dir svg,.c-lin svg,.c-mini svg{width:14px;height:14px;flex:none;color:var(--blue)}
+.contacto{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(135deg,#EEF4FF,#F4F0FF);border:1px solid #D6E2FB;border-radius:14px;padding:14px}
+.avatar{flex:none;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;font-size:15px;letter-spacing:.04em}
+.c-datos{min-width:0;display:grid;gap:3px}
+.c-nom{font-size:17px;font-weight:800;color:var(--ink)}
+.c-cargo{font-size:14px;color:var(--muted);margin-bottom:4px}
+.c-lin{display:flex;gap:7px;align-items:center;font-size:15px;font-weight:600;color:var(--ink);overflow-wrap:anywhere}
+.verif{justify-self:start;margin-top:5px;font-size:12px;font-weight:700;color:var(--teal);background:#E3F5F2;border-radius:999px;padding:3px 10px}
+.c-mini{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-size:14px;color:var(--muted)}
+.c-mini b{color:var(--ink)}
+.c-mini .tel{display:inline-flex;gap:5px;align-items:center;white-space:nowrap}
+.c-mini .avatar{width:28px;height:28px;font-size:11px}
+.asunto{font-weight:700}.extracto{color:var(--muted);font-style:italic}
+.porque ul{margin:4px 0 0 18px;display:grid;gap:2px}
 .porque{margin-top:10px;background:#FFF6EC;border-radius:10px;padding:8px 12px;font-size:15px}
 .control{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:13px;line-height:1.45;color:#4A5A72;background:#F7F9FC;border:1px solid var(--line);border-left:3px solid #B8891F;border-radius:8px;padding:8px 10px}
 .control svg{flex:none;width:16px;height:16px;margin-top:1px;color:#B8891F}
 .control b{color:var(--ink)}
 .detalle{max-height:0;overflow:hidden;transition:max-height .7s ease}
-.ficha.abierta .detalle{max-height:520px}
+.ficha.abierta .detalle{max-height:1400px}
 .detalle-in{border-top:1px dashed var(--line);margin-top:12px;padding-top:12px;display:grid;gap:10px;font-size:15px}
 .detalle-in b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
 .detalle-in ol{padding-left:20px;display:grid;gap:3px}
@@ -142,7 +157,7 @@ header .wrap{position:relative;z-index:1}
 </svg><a href="#contacto">Hablemos</a></div>
   <div class="wrap hero">
     <h1>Prospección comercial con inteligencia artificial</h1>
-    <p>Sistemas que detectan empresas con un motivo real para comprarte, las investigan y dejan cada llamada preparada. Tu equipo comercial deja de buscar y se dedica a vender.</p>
+    <p>Sistemas de inteligencia artificial que detectan empresas con una necesidad real de tu servicio, las analizan y entregan a tu equipo cada llamada preparada: a quién llamar, por qué ahora y qué decir.</p>
     <div class="cta"><a class="btn" href="tel:+34692903910">Llamar: 692 903 910</a><a class="btn alt" href="#demo">Ver cómo funciona</a></div>
     <ul class="datos"><li><b>30 s</b>para revisar 20 empresas</li><li><b>Con prueba</b>cada motivo para llamar</li><li><b>0 envíos</b>tu equipo decide</li></ul>
   </div>
@@ -190,21 +205,23 @@ header .wrap{position:relative;z-index:1}
           <div class="resumen"><span>20 empresas revisadas</span><span>3 con señal hoy</span><span>en 31 s</span></div>
           <div class="fichas">
             <div class="ficha">
-              <div class="ficha-cab"><div><h4>Transportes Ribera Sur</h4><div class="meta">Transporte y logística · Getafe · Mediana</div></div><div class="nota caliente">92<small>caliente</small></div></div>
-              <div class="porque"><b>Por qué ahora:</b> han ganado un contrato público de transporte y montaje de 230.000 €.</div>
+              <div class="ficha-cab"><div><h4>Transportes Ribera Sur</h4><div class="meta">Transporte y logística · Mediana</div><div class="dir"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg>C/ de la Confianza 14, Pol. Los Ángeles · 28906 Getafe</div></div><div class="nota caliente">92<small>caliente</small></div></div>
+              <div class="porque"><b>Por qué ahora:</b><ul><li>Han ganado un contrato público de transporte y montaje de 230.000 € (adjudicado hace 9 días).</li><li>Publican 4 ofertas de conductor y mozo en su web esta semana.</li><li>Trabajan a turnos y anuncian campaña de Navidad.</li></ul></div>
               <div class="detalle"><div class="detalle-in">
-                <div><b>A quién llamar o escribir</b>Laura Gómez · Responsable de Recursos Humanos<br>laura.gomez@riberasur-logistica.es</div>
-                <div><b>Guion de llamada</b><ol><li>Hola, Laura, te llamo de la agencia por vuestro nuevo contrato de transporte.</li><li>Un contrato así suele traer picos de trabajo en almacén y reparto.</li><li>¿Cómo cubrís hoy esos refuerzos de personal?</li><li>Puedo enviarte 2 o 3 perfiles ya seleccionados. ¿Te los mando esta semana?</li></ol></div>
-                <div><b>Email</b>Asunto: «Perfiles para el nuevo contrato de transporte»</div>
+                <div class="contacto"><div class="avatar">LG</div><div class="c-datos"><div class="c-nom">Laura Gómez</div><div class="c-cargo">Responsable de Recursos Humanos</div><div class="c-lin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>916 00 00 00 · directo</div><div class="c-lin"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>laura.gomez@riberasur-logistica.es</div><span class="verif">✓ Contacto verificado en fuente pública</span></div></div>
+                <div><b>Guion de llamada</b><ol><li>Buenos días, Laura. Le llamo de la agencia, especialistas en selección de perfiles logísticos en el sur de Madrid.</li><li>Le llamo a raíz de la adjudicación del contrato de transporte y montaje que acaban de obtener.</li><li>En proyectos de este volumen suele ser necesario reforzar almacén y conducción en pocas semanas. ¿Cómo tienen previsto cubrirlo?</li><li>Si le resulta útil, puedo enviarle esta semana una selección de tres candidatos ya entrevistados. ¿Le parece que la revisemos en 15 minutos el jueves?</li></ol></div>
+                <div><b>Email</b><span class="asunto">Asunto: Refuerzo de personal para el contrato de transporte</span><br><span class="extracto">«Estimada Laura: con motivo de la reciente adjudicación del contrato de transporte, le escribo para ofrecerle una selección de perfiles de almacén y conducción ya evaluados…»</span></div>
               </div></div>
             </div>
             <div class="ficha">
-              <div class="ficha-cab"><div><h4>Almacenes Logísticos del Sur</h4><div class="meta">Almacén y distribución · Getafe · Grande</div></div><div class="nota caliente">85<small>caliente</small></div></div>
-              <div class="porque"><b>Por qué ahora:</b> publican 6 ofertas de mozo de almacén y carretillero en su web.</div>
+              <div class="ficha-cab"><div><h4>Almacenes Logísticos del Sur</h4><div class="meta">Almacén y distribución · Grande</div><div class="dir"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg>Av. de la Industria 7, Pol. San Marcos · 28906 Getafe</div></div><div class="nota caliente">85<small>caliente</small></div></div>
+              <div class="porque"><b>Por qué ahora:</b><ul><li>Publican 6 ofertas de mozo de almacén y carretillero, con incorporación inmediata.</li><li>Amplían su centro de distribución en el polígono.</li></ul></div>
+              <div class="c-mini"><span class="avatar">JM</span><b>Javier Martín</b> · Jefe de operaciones · <span class="tel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>916 00 00 01</span></div>
             </div>
             <div class="ficha">
-              <div class="ficha-cab"><div><h4>Distribuciones Prado</h4><div class="meta">Paquetería · Getafe · Pequeña</div></div><div class="nota templada">61<small>templada</small></div></div>
-              <div class="porque"><b>Por qué puede interesar:</b> estrenan nave en el polígono y trabajan a turnos.</div>
+              <div class="ficha-cab"><div><h4>Distribuciones Prado</h4><div class="meta">Paquetería · Pequeña</div><div class="dir"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg>C/ Torneros 3, Pol. Los Olivos · 28906 Getafe</div></div><div class="nota templada">61<small>templada</small></div></div>
+              <div class="porque"><b>Por qué puede interesar:</b><ul><li>Estrenan nave en el polígono.</li><li>Trabajan a turnos rotativos.</li></ul></div>
+              <div class="c-mini"><span class="avatar">CR</span><b>Carmen Ruiz</b> · Gerente · <span class="tel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>916 00 00 02</span></div>
               <div class="control"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Control de calidad</b> · El email no coincide con el dominio de su web. Conviene confirmarlo antes de escribir.</span></div>
             </div>
           </div>
